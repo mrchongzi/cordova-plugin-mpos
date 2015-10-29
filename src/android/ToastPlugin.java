@@ -14,6 +14,7 @@ public class ToastPlugin extends CordovaPlugin {
         if ("show".equals(action)) {
             showToast(args.getString(0), args.getInt(1));
         }
+        callbackContext.success("success");
         return super.execute(action, args, callbackContext);
     }
 
