@@ -8,6 +8,6 @@ module.exports = {
         exec(function(v_){alert(v_);},null,"Mpos","show",[content,type]);
     },
     getdevicelist:function(){
-    	exec(function(v_){alert(JSON.stringify(v_);},null,"Mpos","getdevicelist",[]);
+    	exec(function(v_){alert(v_);},null,"Mpos","getdevicelist",[]);
     }
 }

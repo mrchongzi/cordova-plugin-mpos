@@ -18,9 +18,7 @@ public class MposPlugin extends CordovaPlugin {
             showToast(args.getString(0)+"_1", args.getInt(1));
             callbackContext.success("success");
         }else if("getdevicelist".equals(action)){
-            List<MposDevice> listDevice=getdevicelist();
-            JSONArray json = JSONArray.fromObject(listDevice);
-            callbackContext.success(json.toString());
+            callbackContext.success(getdevicelist());
         }
         return super.execute(action, args, callbackContext);
     }
@@ -32,20 +30,8 @@ public class MposPlugin extends CordovaPlugin {
             android.widget.Toast.makeText(cordova.getActivity(), text, android.widget.Toast.LENGTH_SHORT).show();
         }
     }
-    private List<MposDevice> getdevicelist(){
-        List<MposDevice> listDevice=new ArrayList<MposDevice>();
-        MposDevice mposDevice1=new MposDevice();
-        mposDevice1.name="aaa";
-        mposDevice1.address="AAA";
-        listDevice.add(mposDevice1);
-        MposDevice mposDevice2=new MposDevice();
-        mposDevice2.name="bbb";
-        mposDevice2.address="BBB";
-        listDevice.add(mposDevice2);
-        return listDevice;
+    private String getdevicelist(){
+        
+        return "aaa,bbb,ccc";
     }
-}
- class MposDevice{
-    public String name;
-     public String address;
 }
