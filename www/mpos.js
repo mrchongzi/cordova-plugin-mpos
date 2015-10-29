@@ -5,6 +5,6 @@ module.exports = {
         //参数2：失败回调function
         //参数3：feature name，与config.xml中注册的一致
         //参数4：要传递的参数，json格式
-        exec(function(v_){alert(v_);},null,"Toast","show",[content,type]);
+        exec(function(v_){alert(v_);},null,"Mpos","show",[content,type]);
     }
 }

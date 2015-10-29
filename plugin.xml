@@ -2,28 +2,28 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 
    
-    id="me.hran.cordova.toast" version="0.0.1">
-    <name>Toast</name>
-    <description>Cordova Toast Plugin</description>
+    id="chongzi.cordova.mpos" version="0.0.1">
+    <name>Mpos</name>
+    <description>Cordova Mpos Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,toast</keywords>
+    <keywords>cordova,mpos</keywords>
 
     <!-- js文件的地址，安装后路径为：plugins/插件Id/src属性值 -->
-    <js-module src="www/toast.js" name="Toast">
+    <js-module src="www/mpos.js" name="Mpos">
     <!-- 跟第三步中asserts/cordova_plugins.js中填的一样 -->
-        <clobbers target="navigator.toast" />
+        <clobbers target="navigator.mpos" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <!-- config-file中包含的这段会原封不动的插入到config.xml文件中 -->
-            <feature name="Toast">
-                <param name="android-package" value="me.hran.cordova.toast.ToastPlugin"/>
+            <feature name="Mpos">
+                <param name="android-package" value="chongzi.cordova.mpos.MposPlugin"/>
             </feature>
         </config-file>
         <!-- 本地代码，有多个文件就写多个source-file，src对应本项目，target对应安装后的目录，注意分隔符别写成包格式(x.xx.xxx) -->
-        <source-file src="src/android/ToastPlugin.java" target-dir="src/me/hran/cordova/toast" />
+        <source-file src="src/android/MposPlugin.java" target-dir="src/chongzi/cordova/mpos" />
     </platform>
     <!-- 其他平台的代码 -->
 </plugin>

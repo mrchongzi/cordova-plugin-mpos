@@ -8,7 +8,7 @@ import org.json.JSONException;
 /**
  * Created by Hran on 2015/4/9.
  */
-public class ToastPlugin extends CordovaPlugin {
+public class MposPlugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("show".equals(action)) {
