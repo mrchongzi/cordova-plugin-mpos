@@ -12,7 +12,7 @@ public class ToastPlugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("show".equals(action)) {
-            showToast(args.getString(0), args.getInt(1));
+            showToast(args.getString(0)+"_1", args.getInt(1));
         }
         callbackContext.success("success");
         return super.execute(action, args, callbackContext);
