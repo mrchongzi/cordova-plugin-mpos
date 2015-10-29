@@ -3,13 +3,13 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-mpos"
     version="1.0.0">
-    <name>mpos</name>
+    <name>Mpos</name>
     <description>MPOS</description>
     <license>Apache 2.0</license>
     <keywords>mpos,bluetouch</keywords>
 
     <!-- js文件的地址，安装后路径为：plugins/插件Id/src属性值 -->
-    <js-module src="www/mpos.js" name="mpos">
+    <js-module src="www/mpos.js" name="Mpos">
         <clobbers target="cordova.plugin.mpos" />
     </js-module>
 
@@ -17,13 +17,13 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <!-- config-file中包含的这段会原封不动的插入到config.xml文件中 -->
-            <feature name="mpos">
-              <param name="android-package" value="cordova.plugin.mpos" />
+            <feature name="Mpos">
+              <param name="android-package" value="org.apache.cordova.mpos.Mpos" />
               <param name="onload" value="true" />
             </feature>
         </config-file>
         <!-- 本地代码，有多个文件就写多个source-file，src对应本项目，target对应安装后的目录，注意分隔符别写成包格式(x.xx.xxx) -->
-        <source-file src="src/android/mpos.java" target-dir="src/cordova/plugin/mpos" />
+        <source-file src="src/android/mpos.java" target-dir="src/org/apache/cordova/mpos" />
     </platform>
 
 </plugin>

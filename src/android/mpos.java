@@ -13,10 +13,17 @@ import org.json.JSONObject;
 import android.provider.Settings;
 public class mpos extends CordovaPlugin
 {
+	@Override
+public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+    super.initialize(cordova, webView);
+    // your init code here
+}
+   
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException 
-    {
-        callbackContext.success("haha");
-        return true;
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        
+            callbackContext.success();
+            return true;
+         // Returning false results in a "MethodNotFound" error.
     }
 }

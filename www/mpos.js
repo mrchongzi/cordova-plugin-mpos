@@ -1,12 +1,12 @@
 var exec = require('cordova/exec');
-var mposinfo = {
+
+var splashscreen = {
     show:function() {
-        exec(null, null, "mposinfo", "show", []);
+        exec(null, null, "SplashScreen", "show", []);
     },
     hide:function() {
-        exec(null, null, "mposinfo", "hide", []);
+        exec(null, null, "SplashScreen", "hide", []);
     }
 };
-module.exports = mposinfo;
- 
-//module.exports = { show: function(content, type){ exec(null,null,"Toast","show",[content,type]); } }
+
+module.exports = splashscreen;
