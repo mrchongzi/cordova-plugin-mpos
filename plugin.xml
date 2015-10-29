@@ -3,10 +3,10 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-mpos"
     version="1.0.0">
-    <name>pd</name>
+    <name>mpos</name>
     <description>连接蓝牙刷卡器</description>
     <license>Apache 2.0</license>
-    <keywords>pd,bluetouch</keywords>
+    <keywords>mpos,bluetouch</keywords>
 
     <!-- js文件的地址，安装后路径为：plugins/插件Id/src属性值 -->
     <js-module src="www/mpos.js" name="mpos">
