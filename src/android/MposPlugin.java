@@ -1,4 +1,4 @@
-package com.example.chongzi.qd1;
+package chongzi.cordova.mpos;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
