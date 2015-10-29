@@ -18,7 +18,8 @@ public class MposPlugin extends CordovaPlugin {
             showToast(args.getString(0)+"_1", args.getInt(1));
             callbackContext.success("success");
         }else if("getdevicelist".equals(action)){
-            callbackContext.success(getdevicelist());
+            List<MposDevice> listDevice=getdevicelist();
+            callbackContext.success(listDevice);
         }
         return super.execute(action, args, callbackContext);
     }
