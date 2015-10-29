@@ -1,4 +1,4 @@
-alert("plugins.mpos");
+
 var exec = require('cordova/exec');
 //module.exports = exec();
  
