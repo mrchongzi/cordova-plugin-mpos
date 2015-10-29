@@ -1,4 +1,4 @@
-public class pd extends CordovaPlugin 
+public class mpos extends CordovaPlugin
 {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException 
