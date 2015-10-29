@@ -19,7 +19,8 @@ public class MposPlugin extends CordovaPlugin {
             callbackContext.success("success");
         }else if("getdevicelist".equals(action)){
             List<MposDevice> listDevice=getdevicelist();
-            callbackContext.success(gson.toJson(listDevice);
+            JSONArray json = JSONArray.fromObject(listDevice);
+            callbackContext.success(json.toString());
         }
         return super.execute(action, args, callbackContext);
     }
