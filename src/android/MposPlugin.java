@@ -8,10 +8,12 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.bluetooth.BluetoothDevice;
 /**
  * Created by Hran on 2015/4/9.
  */
 public class MposPlugin extends CordovaPlugin {
+	BluetoothManager bluetoothManager;
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("show".equals(action)) {
